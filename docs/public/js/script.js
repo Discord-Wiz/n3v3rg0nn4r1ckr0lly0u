@@ -4,7 +4,6 @@ let myHeading = document.querySelector('h1');
 
 function setUserName() {
   let myName = prompt('Please enter your Desired Username');
-  if (myName.content)
   if(!myName) {
     setUserName();
   } else {
