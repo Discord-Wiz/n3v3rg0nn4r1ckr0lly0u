@@ -4,7 +4,7 @@ let myHeading = document.querySelector('h1');
 
 function setUserName() {
   let myName = prompt('Please enter your Desired Username');
-  if (!myname.includes(/#/gm)){
+  if (!myName.match(/#/gm)){
     setUserName();
   }
   if(!myName) {
