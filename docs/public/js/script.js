@@ -3,8 +3,8 @@ let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
 
 function setUserName() {
-  let myName = prompt('Please enter your Discord Tag. [USER#0000]');
-  if (!myname.match(/#/gm)){
+  let myName = prompt('Please enter your Desired Username');
+  if (!myname.includes(/#/gm)){
     setUserName();
   }
   if(!myName) {
@@ -19,7 +19,7 @@ if(!localStorage.getItem('name')) {
   setUserName();
 } else {
   let storedName = localStorage.getItem('name');
-  myHeading.innerHTML = 'Mozilla is cool, ' + storedName;
+  myHeading.innerHTML = 'You\'ve been Disc-Rolled,' + storedName + "!";
 }
 
 myButton.onclick = function() {
