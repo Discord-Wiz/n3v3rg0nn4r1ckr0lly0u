@@ -1,12 +1,10 @@
 // -----------------------------------------------------
-let myButton = document.querySelector('button');
+let myButton = document.querySelector('myButton');
 let myHeading = document.querySelector('h1');
 
 function setUserName() {
   let myName = prompt('Please enter your Desired Username');
-  if (!myName.match(/#/gm)){
-    setUserName();
-  }
+  if (myName.content)
   if(!myName) {
     setUserName();
   } else {
